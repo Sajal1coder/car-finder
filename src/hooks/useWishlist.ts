@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { getWishlist } from '../utils/localStorage';
 
 export function useWishlist() {
-  const [wishlist, setWishlist] = useState<string[]>([]);
+  const [wishlist, setWishlist] = useState<number[]>([]);
 
   useEffect(() => {
     // Initial load
